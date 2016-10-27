@@ -1,0 +1,48 @@
+/* Alignment / display
+  -------------------------------------------------------- */
+
+  .align-r {
+    text-align: right;
+  }
+
+  .align-l {
+    text-align: left;
+  }
+
+  .align-c {
+    text-align: center;
+  }  
+
+  .float-r {
+    float: right;
+  }
+
+  .float-l {
+    float: left;
+  }
+
+  .block {
+    display: block;
+  }
+
+  .inline {
+    display: inline;
+  }
+
+
+/* SVG object link
+  -------------------------------------------------------- */
+
+  a.svg-link {
+    position: relative;
+    display: inline-block;
+  }
+
+  a.svg-link:after {
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+  }

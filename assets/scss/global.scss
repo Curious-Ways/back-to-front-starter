@@ -1,0 +1,101 @@
+/*==============================================================
+
+Global
+
+File: SCSS Partial (/scss/global.scss)
+Compiled to: css/global.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Placeholder file for all SCSS imports
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/*  Compass
+  -------------------------------------------------------- */
+
+@import "compass/css3"; 
+@import "compass/layout";
+@import "compass/typography";
+@import "compass/utilities";
+
+
+/*  Utilities
+  -------------------------------------------------------- */
+
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "utilities/helpers";
+
+
+/*  Base
+  -------------------------------------------------------- */
+
+@import "base/normalize";  
+@import "base/main";
+@import "base/lists";
+@import "base/links";
+@import "base/forms";
+@import "base/media";
+@import "base/tables";
+@import "base/text";
+@import "base/print";
+
+
+/* Pages
+  -------------------------------------------------------- */
+
+@import "pages/content";
+
+
+/*  Layout
+  -------------------------------------------------------- */
+
+@import "layout/layout";
+@import "layout/site-header"; 
+@import "layout/site-footer"; 
+
+
+/*  Components
+  -------------------------------------------------------- */
+
+@import "components/buttons";
+@import "components/navigation-posts";
+@import "components/navigation-primary";
+@import "components/lists";
+
+
+/*  Plugins
+  -------------------------------------------------------- */
+
+
+
+/*  Testing
+  -------------------------------------------------------- 
+
+.content-wrapper {
+	background-color: yellow;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+
+	.content {
+		background-color: green;
+	}	
+}
+
+.grid-content { 
+  background-color: pink;
+}
+ */
+
+
+
+
+
+  

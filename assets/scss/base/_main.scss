@@ -1,0 +1,44 @@
+/*==============================================================
+
+Main
+
+File: SCSS Partial (/scss/partials/_main.scss)
+Compiled to: css/global.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Base rules on HTML element
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* Base
+  -------------------------------------------------------- */
+
+  html {
+  	font-size: 1em;
+    background: $clr-site-bckgrd;
+    color: $base-clr;
+    font: #{$base-fnt-style} #{$base-fnt-weight} #{$base-fnt-size}/#{$base-line-height} $base-fnt;    
+    -webkit-text-size-adjust: 100%;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    box-sizing: border-box;
+
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }    
+  }  
+
+
+  /* Accessability
+  -------------------------------------------------------- */
+
+  .screen-reader-text {
+    display: none;
+  }

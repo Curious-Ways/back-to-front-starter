@@ -1,0 +1,28 @@
+/*==============================================================
+
+Typography
+
+File: SCSS Partial (/scss/partials/_typography.scss)
+Compiled to: css/global.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Typographical elements
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* Links
+  -------------------------------------------------------- */
+
+	h1, h2, h3, h4, h5, h6, p, li {
+		a {
+			@include single-transition(all, 0.3s, ease-in-out, 0s);
+			text-decoration: none;
+		}
+	}

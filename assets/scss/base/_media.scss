@@ -1,0 +1,43 @@
+/*==============================================================
+
+Media
+
+File: SCSS Partial (/scss/partials/_media.scss)
+Compiled to: css/global.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Image and video content
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* Images
+  -------------------------------------------------------- */
+
+img, video, object {
+	//width: inherit;  /* Make images fill their parent's space. Solves IE8. */
+	height: auto;
+	max-width: 100%;
+}
+
+iframe {
+	margin-bottom: $space;
+}
+
+figure {
+	margin-bottom: $space;
+	
+	img {
+		margin-bottom: $space/4;
+	}
+}
+
+figcaption {
+	font-style: italic;
+}

@@ -1,0 +1,39 @@
+/*==============================================================
+
+Tables
+
+File: SCSS Partial (/scss/base/_tables.scss)
+Compiled to: css/global.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Tables base
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* Base
+  -------------------------------------------------------- */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid $clr-keyline;
+	margin-bottom: $space*2;
+}
+
+th {
+	border: 1px solid $clr-keyline;
+	padding: $space/2;
+	text-align: left;
+}
+
+td {
+	border: 1px solid $clr-keyline;
+	padding: $space/2;
+}

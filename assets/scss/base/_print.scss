@@ -1,0 +1,24 @@
+@media print { 
+
+	body {
+		font-family: Georgia, serif;
+		background: none;
+		color: black;
+	}
+
+	.site {
+		width: 100%;
+		margin: 0; padding: 0;
+		background: none;
+	}
+
+	.site-header, 
+	.site-footer {
+		display: none !important;
+	}
+
+	.entry-content a:after {
+		content: " [" attr(href) "] ";
+	}
+
+}

@@ -1,0 +1,44 @@
+/*==============================================================
+
+Lists
+
+File: SCSS Partial (/scss/base/_lists.scss)
+Compiled to: css/global.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Base rules for lists
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* Unordered + ordered lists
+  -------------------------------------------------------- */
+
+	ol, ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+
+/* Definition lists
+  -------------------------------------------------------- */
+
+  dl {
+  	overflow: hidden;
+  	margin: 0;
+  }
+
+  dt {
+  	font-weight: $fnt-bold;
+  }
+
+  dd {
+  	margin: 0 0 $space;
+  }

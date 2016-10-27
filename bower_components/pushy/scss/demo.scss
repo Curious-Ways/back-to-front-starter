@@ -1,0 +1,42 @@
+html, body{
+	-webkit-tap-highlight-color: rgba(0,0,0,0); /* disable webkit tap highlight */
+	overflow-x: hidden;
+}
+
+/* Lists */
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+
+#container{
+	position: relative;
+	padding: 20px 40px;
+	padding-top: 80px;
+}
+
+/* Header */
+
+.site-header{
+	position: fixed;
+	background: #000;
+	color: #FFF;
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+	z-index: 9998;
+}
+
+/* Footer */
+
+.site-footer{
+	position: relative;
+	border-top: 1px solid #EEE;
+	color: #999;
+	padding: 10px;
+	font-size: 0.8em;
+	text-align: center;
+}

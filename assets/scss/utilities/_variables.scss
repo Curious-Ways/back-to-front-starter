@@ -1,0 +1,78 @@
+/*==============================================================
+
+Variables
+
+File: SCSS Partial (/scss/generic/_variables.scss)
+Compiled to: css/global.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: All variables
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* Fonts
+  -------------------------------------------------------- */
+
+  @font-face {
+    font-family: 'A2 Regular';
+    src:  url('../fonts/Regular-SemiboldWEB.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../fonts/Regular-SemiboldWEB.woff') format('woff'); /* Pretty Modern Browsers */
+  }  
+
+/* Base
+  -------------------------------------------------------- */
+
+  $base-clr: rgb(0,0,0);
+  $base-fnt: 'A2 Regular', Arial, "Lucida Grande", sans-serif; 
+  $base-fnt-size: 16px;
+  $base-fnt-weight: normal; 
+  $base-fnt-style: normal;    
+  $base-line-height: 1.6; 
+  $space: 20px; 
+
+
+/* Colors
+   Sample colors from http://flatuicolors.com/ 
+  -------------------------------------------------------- */ 
+
+  $clr-primary: rgb(127, 140, 141); // Concrete #7f8c8d 
+  $clr-secondary: rgb(149, 165, 166); // Asbestos #95a5a6
+  $clr-site-bckgrd: #fff;
+  $clr-keyline: #979797;
+  $clr-btn: rgb(22, 160, 133);
+  $clr-error: #C0392B;
+  $clr-success: rgb(63,195,128);
+
+
+/* Fonts
+  -------------------------------------------------------- */ 
+
+  // Weights
+  $fnt-bold: 700;
+  $fnt-reg: 300;
+
+  // Sizes
+  $fnt-lrg: 48;
+  $fnt-med: 24;
+  $fnt-sml: 12;
+
+
+/* Layout
+  -------------------------------------------------------- */ 
+
+  $max-width: 1200px;
+
+
+/* Breakpoints
+  -------------------------------------------------------- */
+
+  $bp-sml: "(max-width: 480)";
+  $bp-med: "(min-width: 481) and (max-width: 1199px)"; 
+  $bp-lrg: "(min-width: 1200px)";

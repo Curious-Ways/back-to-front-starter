@@ -1,0 +1,77 @@
+/*==============================================================
+
+Text
+
+File: SCSS Partial (/scss/base/_text.scss)
+Compiled to: css/global.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Text styles
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* Reset margins
+  -------------------------------------------------------- */
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+  }
+
+  p, li {
+    margin: 0;
+  }
+
+
+/* Blockquotes
+  -------------------------------------------------------- */
+
+  blockquote {
+    font-style: italic;
+    position: relative;
+  }
+
+
+/* Rule
+  -------------------------------------------------------- */
+
+  hr {
+    border: 0;
+    height: 2px;
+    background: $clr-keyline;
+    margin: $space 0;
+  }
+
+
+/* Misc
+  -------------------------------------------------------- */
+  
+  address {
+    margin-bottom: $space;
+  }
+
+  abbr {
+    border-bottom: 1px dotted $clr-primary;
+    cursor: help;
+  }
+
+  acronym {
+    font-weight: $fnt-bold;
+    font-style: italic;
+  }
+
+  cite {
+    font-weight: $fnt-bold;
+  } 
+  
+  q {
+    font-style: italic;
+  } 

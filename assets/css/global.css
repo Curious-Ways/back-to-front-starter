@@ -1,0 +1,1370 @@
+/*==============================================================
+
+Global
+
+File: SCSS Partial (/scss/global.scss)
+Compiled to: css/global.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Placeholder file for all SCSS imports
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+/*  Compass
+  -------------------------------------------------------- */
+/*  Utilities
+  -------------------------------------------------------- */
+/*==============================================================
+
+Variables
+
+File: SCSS Partial (/scss/generic/_variables.scss)
+Compiled to: css/global.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: All variables
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+/* Fonts
+  -------------------------------------------------------- */
+@font-face {
+  font-family: 'A2 Regular';
+  src: url("../fonts/Regular-SemiboldWEB.woff2") format("woff2"), url("../fonts/Regular-SemiboldWEB.woff") format("woff");
+  /* Pretty Modern Browsers */
+}
+/* Base
+  -------------------------------------------------------- */
+/* Colors
+   Sample colors from http://flatuicolors.com/ 
+  -------------------------------------------------------- */
+/* Fonts
+  -------------------------------------------------------- */
+/* Layout
+  -------------------------------------------------------- */
+/* Breakpoints
+  -------------------------------------------------------- */
+/*==============================================================
+
+Mixins
+
+File: SCSS Partial (/scss/partials/_mixins.scss)
+Compiled to: css/global.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: All mixins
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+/* Fonts
+  -------------------------------------------------------- */
+/* Links
+  -------------------------------------------------------- */
+/* Vertical Algin
+  -------------------------------------------------------- */
+/* Fades
+-------------------------------------------------------- */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Firefox < 16 */
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Internet Explorer */
+/* Opera < 12.1 */
+/* Bounce
+-------------------------------------------------------- */
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+/* line 105, ../scss/utilities/_mixins.scss */
+.bounce-in {
+  -webkit-animation: bounce 1000ms ease-out;
+  animation: bounce 1000ms ease-out;
+}
+
+/* Alignment / display
+  -------------------------------------------------------- */
+/* line 4, ../scss/utilities/_helpers.scss */
+.align-r {
+  text-align: right;
+}
+
+/* line 8, ../scss/utilities/_helpers.scss */
+.align-l {
+  text-align: left;
+}
+
+/* line 12, ../scss/utilities/_helpers.scss */
+.align-c {
+  text-align: center;
+}
+
+/* line 16, ../scss/utilities/_helpers.scss */
+.float-r {
+  float: right;
+}
+
+/* line 20, ../scss/utilities/_helpers.scss */
+.float-l {
+  float: left;
+}
+
+/* line 24, ../scss/utilities/_helpers.scss */
+.block {
+  display: block;
+}
+
+/* line 28, ../scss/utilities/_helpers.scss */
+.inline {
+  display: inline;
+}
+
+/* SVG object link
+  -------------------------------------------------------- */
+/* line 36, ../scss/utilities/_helpers.scss */
+a.svg-link {
+  position: relative;
+  display: inline-block;
+}
+
+/* line 41, ../scss/utilities/_helpers.scss */
+a.svg-link:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/*  Base
+  -------------------------------------------------------- */
+/* line 1, ../scss/base/_normalize.scss */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 7, ../scss/base/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 11, ../scss/base/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 26, ../scss/base/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 34, ../scss/base/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 39, ../scss/base/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 44, ../scss/base/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/* line 48, ../scss/base/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 53, ../scss/base/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 57, ../scss/base/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 62, ../scss/base/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 66, ../scss/base/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 71, ../scss/base/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 76, ../scss/base/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 80, ../scss/base/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 88, ../scss/base/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 92, ../scss/base/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 96, ../scss/base/_normalize.scss */
+img {
+  border: 0;
+}
+
+/* line 100, ../scss/base/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 104, ../scss/base/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 108, ../scss/base/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 113, ../scss/base/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/* line 117, ../scss/base/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* line 125, ../scss/base/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 135, ../scss/base/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/* line 139, ../scss/base/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 144, ../scss/base/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 152, ../scss/base/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 157, ../scss/base/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 163, ../scss/base/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/* line 167, ../scss/base/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 173, ../scss/base/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 178, ../scss/base/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+/* line 183, ../scss/base/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 188, ../scss/base/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 194, ../scss/base/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 199, ../scss/base/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 203, ../scss/base/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* line 207, ../scss/base/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 212, ../scss/base/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/*==============================================================
+
+Main
+
+File: SCSS Partial (/scss/partials/_main.scss)
+Compiled to: css/global.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Base rules on HTML element
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+/* Base
+  -------------------------------------------------------- */
+/* line 23, ../scss/base/_main.scss */
+html {
+  font-size: 1em;
+  background: #fff;
+  color: black;
+  font: normal normal 16px/1.6 "A2 Regular", Arial, "Lucida Grande", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+/* line 33, ../scss/base/_main.scss */
+html *, html *:before, html *:after {
+  box-sizing: inherit;
+}
+
+/* Accessability
+-------------------------------------------------------- */
+/* line 42, ../scss/base/_main.scss */
+.screen-reader-text {
+  display: none;
+}
+
+/*==============================================================
+
+Lists
+
+File: SCSS Partial (/scss/base/_lists.scss)
+Compiled to: css/global.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Base rules for lists
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+/* Unordered + ordered lists
+  -------------------------------------------------------- */
+/* line 23, ../scss/base/_lists.scss */
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Definition lists
+  -------------------------------------------------------- */
+/* line 33, ../scss/base/_lists.scss */
+dl {
+  overflow: hidden;
+  margin: 0;
+}
+
+/* line 38, ../scss/base/_lists.scss */
+dt {
+  font-weight: 700;
+}
+
+/* line 42, ../scss/base/_lists.scss */
+dd {
+  margin: 0 0 20px;
+}
+
+/*==============================================================
+
+Typography
+
+File: SCSS Partial (/scss/partials/_typography.scss)
+Compiled to: css/global.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Typographical elements
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+/* Links
+  -------------------------------------------------------- */
+/* line 24, ../scss/base/_links.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a, li a {
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out;
+  -webkit-transition-delay: 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s;
+  text-decoration: none;
+}
+
+/*==============================================================
+
+Forms
+
+File: SCSS Partial (/scss/base/_forms.scss)
+Compiled to: css/style.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Forms
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+/* Resets
+  -------------------------------------------------------- */
+/* line 22, ../scss/base/_forms.scss */
+input[type=text], input[type=search], input[type=url], input[type=number], textarea {
+  -webkit-appearance: none;
+}
+
+/* line 26, ../scss/base/_forms.scss */
+button, input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;
+}
+
+/* line 32, ../scss/base/_forms.scss */
+button::-moz-focus-inner,
+input[type=submit]::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 38, ../scss/base/_forms.scss */
+input:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="url"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+/* Base
+  -------------------------------------------------------- */
+/* line 55, ../scss/base/_forms.scss */
+form ol, form ul {
+  list-style: none;
+  margin-left: 0;
+}
+/* line 60, ../scss/base/_forms.scss */
+form button, form input, form select, form textarea {
+  border: 1px solid #979797;
+  color: black;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: normal;
+  margin: 0;
+}
+/* line 69, ../scss/base/_forms.scss */
+form fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+/* line 75, ../scss/base/_forms.scss */
+form legend {
+  margin-bottom: 10px;
+}
+/* line 79, ../scss/base/_forms.scss */
+form label {
+  display: block;
+  padding: 0;
+}
+
+/*==============================================================
+
+Media
+
+File: SCSS Partial (/scss/partials/_media.scss)
+Compiled to: css/global.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Image and video content
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+/* Images
+  -------------------------------------------------------- */
+/* line 23, ../scss/base/_media.scss */
+img, video, object {
+  height: auto;
+  max-width: 100%;
+}
+
+/* line 29, ../scss/base/_media.scss */
+iframe {
+  margin-bottom: 20px;
+}
+
+/* line 33, ../scss/base/_media.scss */
+figure {
+  margin-bottom: 20px;
+}
+/* line 36, ../scss/base/_media.scss */
+figure img {
+  margin-bottom: 5px;
+}
+
+/* line 41, ../scss/base/_media.scss */
+figcaption {
+  font-style: italic;
+}
+
+/*==============================================================
+
+Tables
+
+File: SCSS Partial (/scss/base/_tables.scss)
+Compiled to: css/global.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Tables base
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+/* Base
+  -------------------------------------------------------- */
+/* line 23, ../scss/base/_tables.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #979797;
+  margin-bottom: 40px;
+}
+
+/* line 30, ../scss/base/_tables.scss */
+th {
+  border: 1px solid #979797;
+  padding: 10px;
+  text-align: left;
+}
+
+/* line 36, ../scss/base/_tables.scss */
+td {
+  border: 1px solid #979797;
+  padding: 10px;
+}
+
+/*==============================================================
+
+Text
+
+File: SCSS Partial (/scss/base/_text.scss)
+Compiled to: css/global.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Text styles
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+/* Reset margins
+  -------------------------------------------------------- */
+/* line 23, ../scss/base/_text.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+}
+
+/* line 29, ../scss/base/_text.scss */
+p, li {
+  margin: 0;
+}
+
+/* Blockquotes
+  -------------------------------------------------------- */
+/* line 37, ../scss/base/_text.scss */
+blockquote {
+  font-style: italic;
+  position: relative;
+}
+
+/* Rule
+  -------------------------------------------------------- */
+/* line 46, ../scss/base/_text.scss */
+hr {
+  border: 0;
+  height: 2px;
+  background: #979797;
+  margin: 20px 0;
+}
+
+/* Misc
+  -------------------------------------------------------- */
+/* line 57, ../scss/base/_text.scss */
+address {
+  margin-bottom: 20px;
+}
+
+/* line 61, ../scss/base/_text.scss */
+abbr {
+  border-bottom: 1px dotted #7f8c8d;
+  cursor: help;
+}
+
+/* line 66, ../scss/base/_text.scss */
+acronym {
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* line 71, ../scss/base/_text.scss */
+cite {
+  font-weight: 700;
+}
+
+/* line 75, ../scss/base/_text.scss */
+q {
+  font-style: italic;
+}
+
+@media print {
+  /* line 3, ../scss/base/_print.scss */
+  body {
+    font-family: Georgia, serif;
+    background: none;
+    color: black;
+  }
+
+  /* line 9, ../scss/base/_print.scss */
+  .site {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: none;
+  }
+
+  /* line 15, ../scss/base/_print.scss */
+  .site-header,
+  .site-footer {
+    display: none !important;
+  }
+
+  /* line 20, ../scss/base/_print.scss */
+  .entry-content a:after {
+    content: " [" attr(href) "] ";
+  }
+}
+/* Pages
+  -------------------------------------------------------- */
+/*==============================================================
+
+Page Content
+
+File: SCSS Partial (/scss/partials/_content.scss)
+Compiled to: css/global.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Everything between a page header and the site footer
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+/* Entry Content
+  -------------------------------------------------------- */
+/* line 29, ../scss/pages/_content.scss */
+.entry-content ul li, .entry-content ol li, .entry-content dl li {
+  margin: 0 0 5px 20px;
+}
+/* line 34, ../scss/pages/_content.scss */
+.entry-content ol li {
+  list-style-type: decimal;
+}
+/* line 38, ../scss/pages/_content.scss */
+.entry-content ul li {
+  list-style-type: disc;
+}
+/* line 42, ../scss/pages/_content.scss */
+.entry-content ul li ul,
+.entry-content ol li ul,
+.entry-content ol li ol {
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+/* WP
+  -------------------------------------------------------- */
+/* line 57, ../scss/pages/_content.scss */
+.byline {
+  display: none;
+}
+
+/* line 61, ../scss/pages/_content.scss */
+.bypostauthor {
+  font-weight: 700;
+}
+
+/* line 65, ../scss/pages/_content.scss */
+.single .byline,
+.group-blog .byline {
+  display: inline;
+}
+
+/* line 70, ../scss/pages/_content.scss */
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+
+/* line 75, ../scss/pages/_content.scss */
+.alignleft, .alignright, .aligncenter {
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+@media (min-width: 1200px), (min-width: 481) and (max-width: 1199px) {
+  /* line 80, ../scss/pages/_content.scss */
+  .alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+  }
+}
+
+@media (min-width: 1200px), (min-width: 481) and (max-width: 1199px) {
+  /* line 89, ../scss/pages/_content.scss */
+  .alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+  }
+}
+
+/* line 98, ../scss/pages/_content.scss */
+.aligncenter {
+  clear: both;
+}
+
+/* line 102, ../scss/pages/_content.scss */
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* line 110, ../scss/pages/_content.scss */
+.wp-caption {
+  border: 1px solid #979797;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+/* line 116, ../scss/pages/_content.scss */
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin: 1.2% auto 0;
+  max-width: 98%;
+}
+
+/* line 122, ../scss/pages/_content.scss */
+.wp-caption-text {
+  text-align: center;
+}
+
+/* line 126, ../scss/pages/_content.scss */
+.wp-caption .wp-caption-text {
+  margin: 20px 0;
+}
+
+/* line 130, ../scss/pages/_content.scss */
+.site-content .gallery {
+  margin-bottom: 20px;
+}
+
+/* line 133, ../scss/pages/_content.scss */
+.gallery-caption {
+  margin: 20px 0;
+}
+
+/* line 136, ../scss/pages/_content.scss */
+.site-content .gallery a img {
+  border: none;
+  height: auto;
+  max-width: 90%;
+}
+
+/* line 141, ../scss/pages/_content.scss */
+.site-content .gallery dd {
+  margin: 0;
+}
+
+/*  Layout
+  -------------------------------------------------------- */
+/* Clearfix
+  -------------------------------------------------------- */
+/* line 5, ../scss/layout/_layout.scss */
+.content-wrapper:after, .nav-links:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content wrappers
+  -------------------------------------------------------- */
+/* line 19, ../scss/layout/_layout.scss */
+.content-wrapper {
+  position: relative;
+}
+/* line 26, ../scss/layout/_layout.scss */
+.content-wrapper .content {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 40px;
+}
+
+/* Grids
+-------------------------------------------------------- */
+/* line 43, ../scss/layout/_layout.scss */
+.grid {
+  margin: 0 -10px;
+  padding: 0;
+  list-style-type: none;
+}
+@media (min-width: 1200px), (min-width: 481) and (max-width: 1199px) {
+  /* line 43, ../scss/layout/_layout.scss */
+  .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* line 55, ../scss/layout/_layout.scss */
+.grid-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0 0 20px 0;
+  width: 100%;
+}
+/* line 61, ../scss/layout/_layout.scss */
+.no-flexbox .grid-item {
+  float: left;
+}
+
+/* line 66, ../scss/layout/_layout.scss */
+.grid-item_full {
+  width: 100%;
+}
+
+@media (min-width: 1200px), (min-width: 481) and (max-width: 1199px) {
+  /* line 70, ../scss/layout/_layout.scss */
+  .grid-item_half {
+    margin-bottom: 0;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 78, ../scss/layout/_layout.scss */
+  .grid-item_third {
+    width: 33.33%;
+  }
+}
+@media (min-width: 481) and (max-width: 1199px) {
+  /* line 78, ../scss/layout/_layout.scss */
+  .grid-item_third {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 89, ../scss/layout/_layout.scss */
+  .grid-item_forth {
+    width: 25%;
+  }
+}
+@media (min-width: 481) and (max-width: 1199px) {
+  /* line 89, ../scss/layout/_layout.scss */
+  .grid-item_forth {
+    width: 33.33%;
+  }
+}
+
+/* line 100, ../scss/layout/_layout.scss */
+.grid-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 0;
+  margin: 0 10px;
+  width: 100%;
+}
+/* line 108, ../scss/layout/_layout.scss */
+.grid-content img {
+  display: block;
+}
+
+/*==============================================================
+
+Site header
+
+File: SCSS Partial (/scss/partials/_site-header.scss)
+Compiled to: css/global.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Every within <header class="site-header" role="banner">
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+/*==============================================================
+
+Site footer
+
+File: SCSS Partial (/scss/partials/_site-footer.scss)
+Compiled to: css/global.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Every within <footer class="site-footer" role="contentinfo">
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+/*  Components
+  -------------------------------------------------------- */
+/*==============================================================
+
+Buttons
+
+File: SCSS Partial (/scss/objects/_buttons.scss)
+Compiled to: css/style.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Buttons
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+/* line 23, ../scss/components/_buttons.scss */
+.btn {
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out;
+  -webkit-transition-delay: 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s;
+  font-size: 16px;
+  font-size: 1rem;
+  border: none;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border-radius: 22px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* line 52, ../scss/components/_buttons.scss */
+.btn {
+  background-color: #16a085;
+}
+/* line 44, ../scss/components/_buttons.scss */
+.btn:hover, .btn:active {
+  color: #fff;
+}
+
+/*==============================================================
+
+Posts Navigation
+
+File: SCSS Partial (/scss/objects/_navigation-posts.scss)
+Compiled to: css/style.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Post and custom post navigation
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+/* Posts navigation wrapper
+  -------------------------------------------------------- */
+/* Prev / Next
+  -------------------------------------------------------- */
+/* line 32, ../scss/components/_navigation-posts.scss */
+.nav-links {
+  border-top: 1px solid #979797;
+  padding-top: 10px;
+}
+/* line 37, ../scss/components/_navigation-posts.scss */
+.nav-links .nav-next {
+  float: right;
+  text-align: right;
+  width: 45%;
+}
+/* line 43, ../scss/components/_navigation-posts.scss */
+.nav-links .nav-previous {
+  float: left;
+  text-align: left;
+  width: 45%;
+}
+/* line 49, ../scss/components/_navigation-posts.scss */
+.nav-links a {
+  text-decoration: none;
+}
+
+/*==============================================================
+
+Primary navigation
+
+File: SCSS Partial (/scss/objects/_navigation-primary.scss)
+Compiled to: css/style.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Main navigation
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+/* line 19, ../scss/components/_navigation-primary.scss */
+.main-navigation {
+  clear: both;
+  display: block;
+  float: left;
+  width: 100%;
+}
+/* line 25, ../scss/components/_navigation-primary.scss */
+.main-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+/* line 31, ../scss/components/_navigation-primary.scss */
+.main-navigation ul ul {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  float: left;
+  position: absolute;
+  top: 1.5em;
+  left: -999em;
+  z-index: 99999;
+}
+/* line 39, ../scss/components/_navigation-primary.scss */
+.main-navigation ul ul ul {
+  left: -999em;
+  top: 0;
+}
+/* line 45, ../scss/components/_navigation-primary.scss */
+.main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
+  left: 100%;
+}
+/* line 51, ../scss/components/_navigation-primary.scss */
+.main-navigation ul ul a {
+  width: 200px;
+}
+/* line 64, ../scss/components/_navigation-primary.scss */
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+  left: auto;
+}
+/* line 70, ../scss/components/_navigation-primary.scss */
+.main-navigation li {
+  float: left;
+  position: relative;
+}
+/* line 79, ../scss/components/_navigation-primary.scss */
+.main-navigation a {
+  display: block;
+  text-decoration: none;
+}
+
+/* Small menu. */
+/* line 92, ../scss/components/_navigation-primary.scss */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+}
+
+/* line 97, ../scss/components/_navigation-primary.scss */
+.menu-toggle:before {
+  content: "\2630";
+  display: inline-block;
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 37.5em) {
+  /* line 104, ../scss/components/_navigation-primary.scss */
+  .menu-toggle {
+    display: none;
+  }
+
+  /* line 107, ../scss/components/_navigation-primary.scss */
+  .main-navigation ul {
+    display: block;
+  }
+}
+/*==============================================================
+
+Lists
+
+File: SCSS Partial (/scss/objects/_lists.scss)
+Compiled to: css/style.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: List styles
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+/* Inline
+  -------------------------------------------------------- */
+/* line 23, ../scss/components/_lists.scss */
+.list-inline li {
+  display: inline-block;
+}
+
+/*  Plugins
+  -------------------------------------------------------- */
+/*  Testing
+  -------------------------------------------------------- 
+
+.content-wrapper {
+	background-color: yellow;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+
+	.content {
+		background-color: green;
+	}	
+}
+
+.grid-content { 
+  background-color: pink;
+}
+ */

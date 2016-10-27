@@ -1,0 +1,52 @@
+/*==============================================================
+
+Posts Navigation
+
+File: SCSS Partial (/scss/objects/_navigation-posts.scss)
+Compiled to: css/style.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Post and custom post navigation
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* Posts navigation wrapper
+  -------------------------------------------------------- */
+
+  .posts-navigation {
+
+  }
+
+
+
+/* Prev / Next
+  -------------------------------------------------------- */
+
+  .nav-links {
+    @extend %clearfix;
+    border-top: 1px solid $clr-keyline;
+    padding-top: 10px;
+
+    .nav-next {
+      float: right;
+      text-align: right;
+      width: 45%;
+    }
+
+    .nav-previous {
+      float: left;
+      text-align: left;
+      width: 45%;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }

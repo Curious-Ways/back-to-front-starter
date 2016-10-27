@@ -1,0 +1,147 @@
+/*==============================================================
+
+Page Content
+
+File: SCSS Partial (/scss/partials/_content.scss)
+Compiled to: css/global.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Everything between a page header and the site footer
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* Entry Content
+  -------------------------------------------------------- */
+
+  .entry-content {
+
+    // Lists
+    // ----------
+    
+    ul, ol, dl {
+      li {
+        margin: 0 0 5px 20px;     
+      }
+    }
+
+    ol li {
+      list-style-type: decimal;
+    }
+
+    ul li {
+      list-style-type: disc;
+    }
+
+    ul li ul,
+    ol li ul,
+    ol li ol {
+      margin-bottom: 0;
+      margin-top: 8px;
+    }
+  }
+
+/* WP
+  -------------------------------------------------------- */
+  
+  .sticky {
+    
+  }
+
+  .byline {
+    display: none;
+  }
+
+  .bypostauthor {
+    font-weight: $fnt-bold;
+  }
+
+  .single .byline,
+  .group-blog .byline {
+    display: inline;
+  }
+
+  .page-links {
+    clear: both;
+    margin: 0 0 1.5em;
+  } 
+
+  .alignleft, .alignright, .aligncenter {
+    display: block;
+    margin: 0 auto $space auto;   
+  }
+
+  .alignleft {
+
+    @media #{$bp-lrg, $bp-med} {
+      display: inline;
+      float: left;
+      margin-right: 1.5em;
+    }
+  }
+
+  .alignright {
+
+    @media #{$bp-lrg, $bp-med} {
+      display: inline;
+      float: right;
+      margin-left: 1.5em;
+    }
+  }
+
+  .aligncenter {
+    clear: both;
+  }  
+
+  .entry-content img.wp-smiley,
+  .comment-content img.wp-smiley {
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .wp-caption {
+    border: 1px solid $clr-keyline;
+    margin-bottom: $space;
+    max-width: 100%;
+  }
+
+  .wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin: 1.2% auto 0;
+    max-width: 98%;
+  }
+
+  .wp-caption-text {
+    text-align: center;
+  }
+
+  .wp-caption .wp-caption-text {
+    margin: $space 0;
+  }
+
+  .site-content .gallery {
+    margin-bottom: $space;
+  }
+  .gallery-caption {
+    margin: $space 0;
+  }
+  .site-content .gallery a img {
+    border: none;
+    height: auto;
+    max-width: 90%;
+  }
+  .site-content .gallery dd {
+    margin: 0;
+  }
+  .site-content .gallery-columns-4 .gallery-item {
+  }
+  .site-content .gallery-columns-4 .gallery-item img {
+  }  

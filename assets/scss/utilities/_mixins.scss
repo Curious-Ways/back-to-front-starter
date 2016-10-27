@@ -1,0 +1,110 @@
+/*==============================================================
+
+Mixins
+
+File: SCSS Partial (/scss/partials/_mixins.scss)
+Compiled to: css/global.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: All mixins
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* Fonts
+  -------------------------------------------------------- */
+
+  // http://w3bits.com/rem-fallback/
+  // @include font-size(12);
+
+  @mixin font-size($size, $base: $base-fnt-size) {
+    font-size: $size; // fallback for old browsers
+    font-size: ($size / $base) * 1rem;
+  }
+
+
+/* Links
+  -------------------------------------------------------- */
+
+ 	@mixin links-white {
+ 		@include link-colors(rgb(255,255,255), $clr-blue, $clr-blue, rgb(255,255,255), #fff)
+ 	}
+
+ 	@mixin links-black {
+ 		@include link-colors(rgb(0,0,0), $clr-blue, $clr-blue, rgb(0,0,0), $clr-blue)
+ 	}
+
+
+/* Vertical Algin
+  -------------------------------------------------------- */ 
+
+  @mixin vertical-align($position: relative) {
+    position: $position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }  
+
+  /* Fades
+  -------------------------------------------------------- */ 
+  
+  @mixin fade-in($time: 2s) {
+    -webkit-animation: fadein $time; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein $time; /* Firefox < 16 */
+      -ms-animation: fadein $time; /* Internet Explorer */
+       -o-animation: fadein $time; /* Opera < 12.1 */
+          animation: fadein $time;    
+  }  
+
+  @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Firefox < 16 */
+  @-moz-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Internet Explorer */
+  @-ms-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Opera < 12.1 */
+  @-o-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }  
+
+
+  /* Bounce
+  -------------------------------------------------------- */ 
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+  }
+
+  .bounce-in {
+    -webkit-animation: bounce 1000ms ease-out;
+    -moz-animation: bounce 1000ms ease-out;
+    -o-animation: bounce 1000ms ease-out;
+    animation: bounce 1000ms ease-out;  
+  }

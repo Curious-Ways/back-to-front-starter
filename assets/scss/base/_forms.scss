@@ -1,0 +1,83 @@
+/*==============================================================
+
+Forms
+
+File: SCSS Partial (/scss/base/_forms.scss)
+Compiled to: css/style.css
+Created: 12/09/2016
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Forms
+Author: Back to Front
+Author URI: http://backtofront.london
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+/* Resets
+  -------------------------------------------------------- */
+
+input[type=text], input[type=search], input[type=url], input[type=number], textarea {
+	-webkit-appearance: none;
+}
+
+button, input[type="submit"] {
+	cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;	
+}
+
+button::-moz-focus-inner,
+input[type=submit]::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+ 
+input:focus, 
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="url"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+
+/* Base
+  -------------------------------------------------------- */
+
+form {
+
+	ol, ul {
+		list-style: none;
+		margin-left: 0;
+	}
+
+	button, input, select, textarea {
+		border: 1px solid $clr-keyline;
+		color: $base-clr;
+	  font-family: inherit;
+	  font-size: 100%;
+	  line-height: normal; 
+	  margin: 0;
+	}	
+
+	fieldset {
+		border: 0;
+		padding: 0;
+		margin: 0;
+	}
+
+	legend {
+		margin-bottom: $space/2;
+	}
+
+	label {
+		display: block;
+		padding: 0;
+	}	
+}
