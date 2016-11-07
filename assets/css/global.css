@@ -989,7 +989,7 @@ Author URI: http://backtofront.london
 /* Clearfix
   -------------------------------------------------------- */
 /* line 5, ../scss/layout/_layout.scss */
-.content-wrapper:after, .nav-links:after {
+.content-wrapper:after, .grid:after, .nav-links:after {
   content: "";
   display: table;
   clear: both;
@@ -1013,6 +1013,7 @@ Author URI: http://backtofront.london
 -------------------------------------------------------- */
 /* line 43, ../scss/layout/_layout.scss */
 .grid {
+  width: 100%;
   margin: 0 -10px;
   padding: 0;
   list-style-type: none;
@@ -1031,7 +1032,7 @@ Author URI: http://backtofront.london
   }
 }
 
-/* line 55, ../scss/layout/_layout.scss */
+/* line 57, ../scss/layout/_layout.scss */
 .grid-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1040,18 +1041,18 @@ Author URI: http://backtofront.london
   margin: 0 0 20px 0;
   width: 100%;
 }
-/* line 61, ../scss/layout/_layout.scss */
+/* line 63, ../scss/layout/_layout.scss */
 .no-flexbox .grid-item {
   float: left;
 }
 
-/* line 66, ../scss/layout/_layout.scss */
+/* line 68, ../scss/layout/_layout.scss */
 .grid-item_full {
   width: 100%;
 }
 
 @media (min-width: 1200px), (min-width: 481) and (max-width: 1199px) {
-  /* line 70, ../scss/layout/_layout.scss */
+  /* line 72, ../scss/layout/_layout.scss */
   .grid-item_half {
     margin-bottom: 0;
     width: 50%;
@@ -1059,32 +1060,32 @@ Author URI: http://backtofront.london
 }
 
 @media (min-width: 1200px) {
-  /* line 78, ../scss/layout/_layout.scss */
+  /* line 80, ../scss/layout/_layout.scss */
   .grid-item_third {
     width: 33.33%;
   }
 }
 @media (min-width: 481) and (max-width: 1199px) {
-  /* line 78, ../scss/layout/_layout.scss */
+  /* line 80, ../scss/layout/_layout.scss */
   .grid-item_third {
     width: 50%;
   }
 }
 
 @media (min-width: 1200px) {
-  /* line 89, ../scss/layout/_layout.scss */
+  /* line 91, ../scss/layout/_layout.scss */
   .grid-item_forth {
     width: 25%;
   }
 }
 @media (min-width: 481) and (max-width: 1199px) {
-  /* line 89, ../scss/layout/_layout.scss */
+  /* line 91, ../scss/layout/_layout.scss */
   .grid-item_forth {
     width: 33.33%;
   }
 }
 
-/* line 100, ../scss/layout/_layout.scss */
+/* line 102, ../scss/layout/_layout.scss */
 .grid-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1099,7 +1100,7 @@ Author URI: http://backtofront.london
   margin: 0 10px;
   width: 100%;
 }
-/* line 108, ../scss/layout/_layout.scss */
+/* line 110, ../scss/layout/_layout.scss */
 .grid-content img {
   display: block;
 }
