@@ -31,7 +31,8 @@
 		}
 	}
 
-	
+
+
 /* Grids
 -------------------------------------------------------- */
 
@@ -41,24 +42,21 @@
 	// 
 
 	.grid {
-		@extend %clearfix;
-		width: 100%;		
-		margin: 0 -10px;
-		padding: 0;
-		list-style-type: none;
 
 		@media #{$bp-lrg, $bp-med} {
-	  	display: flex;
+			display: flex;
 	  	flex-wrap: wrap;
-	  	justify-content: center;
+	  	margin: 0 0 0 -1.5em;
+	  	//justify-content: center;
 	  }
 	}
 
 	.grid-item {
-	  display: flex; 
-	  padding: 0;
-	  margin: 0 0 $space 0;
-	  width: 100%;
+		flex: 1;
+
+		@media #{$bp-med, $bp-lrg} {
+			padding: 0 0 0 1.5em;
+		}
 
 	  .no-flexbox & {
 	  	float: left;
@@ -66,36 +64,35 @@
 	}
 
 	.grid-item_full {
-		width: 100%;
+		flex: 0 0 100%;
 	}
 
 	.grid-item_half {
 
 		@media #{$bp-lrg, $bp-med} {
-			margin-bottom: 0;
-			width: 50%;
+			flex: 0 0 50%;
 		}
 	}
 
 	.grid-item_third {
 
 		@media #{$bp-lrg} {
-			width: 33.33%;
+			flex: 0 0 33.3333%;
 		}
 
 		@media #{$bp-med} {
-			width: 50%;
+			flex: 0 0 50%;
 		}	
 	}
 
 	.grid-item_forth {
 
 		@media #{$bp-lrg} {
-			width: 25%;
+			flex: 0 0 25%;
 		}
 
 		@media #{$bp-med} {
-			width: 33.33%;
+			flex: 0 0 33.3333%
 		}	
 	}
 
